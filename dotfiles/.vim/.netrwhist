@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/jackofblades/projects/ProgrammingIntroNotes/assembly/notes/os'
+let g:netrw_dirhist_1='/home/jackofblades/projects/ProgrammingIntroNotes/assembly/problems/3_27'
+let g:netrw_dirhist_0='/home/jackofblades/projects/ProgrammingIntroNotes/assembly/problems'
+let g:netrw_dirhist_9='/home/jackofblades/projects/ProgrammingIntroNotes/assembly/problems/3_26'
+let g:netrw_dirhist_8='/home/jackofblades/projects/ProgrammingIntroNotes/assembly/problems'
+let g:netrw_dirhist_7='/home/jackofblades/projects/ProgrammingIntroNotes/assembly/problems/3_27'
+let g:netrw_dirhist_6='/home/jackofblades/projects/ProgrammingIntroNotes/assembly/problems'
+let g:netrw_dirhist_5='/home/jackofblades/projects/ProgrammingIntroNotes/assembly/problems/3_27'
+let g:netrw_dirhist_4='/home/jackofblades/projects/ProgrammingIntroNotes/assembly/problems'
+let g:netrw_dirhist_3='/home/jackofblades/projects/ProgrammingIntroNotes/assembly/problems/3_27'
