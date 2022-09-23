@@ -1,0 +1,6 @@
+xterm*termName: xterm-256color
+
+xterm*background: black
+xterm*foreground: lightgray
+
+xterm*faceName: monospace:pixelsize=22
