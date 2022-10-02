@@ -3,4 +3,8 @@ xterm*termName: xterm-256color
 xterm*background: black
 xterm*foreground: lightgray
 
-xterm*faceName: monospace:pixelsize=22
+xterm*faceName: Ubuntu Mono derivative Powerline:pixelsize=22
+
+xterm*VT100.translations: #override \
+    Ctrl Shift <Key>V:      insert-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>C:      copy-selection(CLIPBOARD) 

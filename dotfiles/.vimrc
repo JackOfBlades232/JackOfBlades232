@@ -8,8 +8,14 @@ filetype indent on
 " Syntax highlighting
 syntax on
 set t_Co=256
+set termguicolors
+let g:gruvbox_bold='1'
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_transparent_bg='1'
+let g:gruvbox_italic=1
 set background=dark
 colorscheme gruvbox
+hi Normal guibg=NONE ctermbg=NONE
 
 " More essentials
 set hidden
@@ -67,3 +73,12 @@ au BufNewFile,BufRead *.asm set filetype=nasm
 let &t_SI = "\<Esc>[5 q"
 let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
+
+" Plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
+
+inoremap <expr> <tab> coc#pum#visible() ? coc#pum#confirm() : "\<Tab>"
