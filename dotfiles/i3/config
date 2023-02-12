@@ -41,16 +41,16 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # screen res
-exec_always xrandr --output eDP-1 --mode 1920x1080
+exec_always xrandr --output eDP-1 --mode 2048x1152
 
 # keyboard delay
-exec --no-startup-id xset r rate 275 22
+exec --no-startup-id xset r rate 375 30
+
+# compositor
+exec --no-startup-id picom --experimental-backends
 
 # wallpaper
 exec --no-startup-id nitrogen --restore
-
-# compositor
-exec --no-startup-id picom -CGb
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -63,7 +63,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
